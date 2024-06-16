@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style with me</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-rDjpa7clzhp1Y+rMOqmn9KQr3oR3zDAzx13Ud9XMO9fS+59f07FmPEI3zpqEid5S" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
+    <style>
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <!--popup-->
+    <div class="popup hide-popup">
+        <div class="popup-content">
+          <div class="popup-close">
+            <i class='bx bx-x'></i>
+          </div>
+          <div class="popup-left">
+            <div class="popup-img-container">
+              <img class="popup-img" src="gallery/34.avif" alt="popup">
+            </div>
+          </div>
+          <div class="popup-right">
+            <div class="right-content">
+              <h1>Step into the new year with style! </h1>
+              <p>Explore our latest collection and enjoy exclusive discounts on trendy dresses that will elevate your fashion game.
+                 Welcome to the ultimate online dress shopping experience!</p>
+              <form action="#">
+                <input type="email" placeholder="Enter your email..." class="popup-form">
+                <a href="#">Subscribe</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/logo.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">Style with me</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" id="cart-icon" class = "btn position-relative">
+                    <i id="cart-icon" class = "fa fa-shopping-cart"></i>
+                    <span id="cart-count" class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#collection">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#special">specials</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#blogs">blogs</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#popular">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+  
+
+    <!-- header -->
+    <header id = "header" style = "padding-top: 100px;">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="image-overlay">
+                        <img src="gallery/39.avif" class="d-block w-100" alt="...">
+                      </div>
+                    <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0"  data-aos="fade-up"
+                    data-aos-duration="1000">
+                        <h2 class = "text-capitalize text-white">best price & offer</h2>
+                        <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+                        <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="image-overlay">
+                        <img src="gallery/1.avif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0 ">
+                        <h2 class = "text-capitalize text-white">best price & offer</h2>
+                        <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+                        <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="image-overlay">
+                    <img src="gallery/2.avif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
+                        <h2 class = "text-capitalize text-white">best price & offer</h2>
+                        <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+                        <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+                    </div>
+                  </div>
+    
+                  <div class="carousel-item">
+                    <div class="image-overlay">
+                        <img src="gallery/4.avif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
+                        <h2 class = "text-capitalize text-white">best price & offer</h2>
+                        <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+                        <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+                    </div>
+                  </div>
+    
+                  <div class="carousel-item">
+                    <div class="image-overlay">
+                        <img src="gallery/3.avif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
+                        <h2 class = "text-capitalize text-white">best price & offer</h2>
+                        <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+                        <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </header>
+    
+    <!-- end of header -->
+
+    <!-- collection -->
+    <section id = "collection" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+
+                <h2 class = "position-relative d-inline-block" >Collection</h2>
+                <hr class="my-3">
+            </div>
+
+            <div class = "row g-0">
+                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Best Sellers</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Featured</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">New Arrival</button>
+                </div>
+
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best"><a href="Details.html">
+                        <div class = "collection-img position-relative">
+                            <img src = "gallery/GIVO OLIVIA LINEN BLEND MAXI SKIRT.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1 text-dark link-underline-opacity-0 your-custom-class">WOMENS SLIM CUT STRETCH DENIM JEAN</p>
+                            <span class="fw-bold text-dark link-underline-opacity-0 your-custom-class">Rs 3500.00 LKR</span>
+
+
+                        </div>
+                    </div></a>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat"><a href="Details.html">
+                        <div class = "collection-img position-relative">
+                            <img src = "gallery/WOMENS FLORAL EMBROIDERY DETAILED SHORT DRESS.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">FLORAL EMBROIDERY DETAILED SHORT DRESS</p>
+                            <span class = "fw-bold">Rs 2,500.00</span>
+                        </div>
+                    </div></a>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new"><a href="Details.html">
+                        <div class = "collection-img position-relative">
+                            <img src = "gallery/WOMENS BELLONA SLEEVLESS LINEN DRESSS.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">BELLONA SLEEVLESS LINEN DRESSS</p>
+                            <span class = "fw-bold">Rs 3,500.00 </span>
+                        </div>
+                    </div></a>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best"><a href="Details.html">
+                        <div class = "collection-img position-relative">
+                            <img src = "gallery/WOMENS ASHANTI SLEEVELESS BATIK MAXI DRESS.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">ASHANTI SLEEVELESS BATIK MAXI DRESS</p>
+                            <span class = "fw-bold">Rs 1,600.00 </span>
+                        </div>
+                    </div></a>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat"><a href="Details.html">
+                        <div class = "collection-img position-relative">
+                            <img src = "gallery/PLEATED SLEEVELESS PEPELUM TOP.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">PLEATED SLEEVELESS PEPELUM TOP</p>
+                            <span class = "fw-bold">Rs 2,300.00</span>
+                        </div>
+                    </div></a>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new"><a href="Details.html">
+                        <div class = "collection-img position-relative">
+                            <img src = "gallery/MISS ME WOMENS HIGH WAIST SLIM FIT DENIM JEAN.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">HIGH WAIST SLIM FIT DENIM JEAN</p>
+                            <span class = "fw-bold">Rs 2700.00</span>
+                        </div>
+                    </div></a>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best"><a href="Details.html">
+                        <div class = "collection-img position-relative">
+                            <img src = "gallery/OVER SIZED CHECKED SHIRT.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">OVER SIZED CHECKED SHIRT</p>
+                            <span class = "fw-bold">Rs 2300.00</span>
+                        </div>
+                    </div></a>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat"><a href="Details.html">
+                        <div class = "collection-img position-relative">
+                            <img src = "gallery/HIGH WAIST MAXI SKIRT.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">HIGH WAIST MAXI SKIRT</p>
+                            <span class = "fw-bold">Rs 1,300.00 LKR</span>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+
+
+    <section id = "special" class = "py-5">
+        <div class="container-fluid special">
+            <div class="container py-5">
+                <div class = "title text-center mb-4">
+                    <h2 class = "position-relative d-inline-block">Special Products</h2>
+                    <hr class="my-3">
+                </div>
+                <div class="owl-carousel special-carousel justify-content-center">
+                    <div class="position-relative special-item">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "images/Women Bellona Sleeveless Linen Dress.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class = "fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Women Bellona Sleeveless Linen Dress</p>
+                            <span class = "fw-bold d-block">Rs 2000.00</span>
+                            <button onclick="addToCart('Women Bellona Sleeveless Linen Dress', 2000.00)" class = "btn btn-primary add-cart my-3">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="position-relative special-item">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "images/GIVO Womens Chino Pants.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class = "fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">GIVO Womens Chino Pants</p>
+                            <span class = "fw-bold d-block">Rs 3500.00</span>
+                            <button onclick="addToCart('GIVO Womens Chino Pants', 3500.00)" class = "btn btn-primary add-cart my-3">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="position-relative special-item">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "images/GIVO womans skirt.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class = "fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">GIVO womans skirt.jpg</p>
+                            <span class = "fw-bold d-block">Rs 1500.00</span>
+                            <button onclick="addToCart('GIVO womans skirt.jpg', 1500.00)" class = "btn btn-primary add-cart my-3">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="position-relative special-item">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "images/Amani Maxi Skirt and Crop Top Co-ord Set.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class = "fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Amani Maxi Skirt and Crop Top Co-ord Set</p>
+                            <span class = "fw-bold d-block">Rs 3890.00</span>
+                            <button onclick="addToCart('Amani Maxi Skirt and Crop Top Co-ord Set', 3890.00)" class = "btn btn-primary add-cart my-3">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="position-relative special-item">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "images/Amani Womens Smart Jeggings.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class = "fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Amani Womens Smart Jeggings</p>
+                            <span class = "fw-bold d-block">Rs 2000.00</span>
+                            <button onclick="addToCart('Amani Womens Smart Jeggings', 2000.00)" class = "btn btn-primary add-cart my-3">Add to Cart</button>
+                        </div>
+                    </div>
+
+
+                    <div class="position-relative special-item">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "images/Womens Floral Embroidery Detailed Short Dress.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class = "fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Womens Floral Embroidery Detailed Short Dress</p>
+                            <span class = "fw-bold d-block">Rs 4390.00</span>
+                            <button onclick="addToCart('Womens Floral Embroidery Detailed Short Dress', 4390.00)" class = "btn btn-primary add-cart my-3">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="position-relative special-item">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "images/Ethnic Fusion Geo Printed Sheer Georgette Saree.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class = "fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Ethnic Fusion Geo Printed Sheer Georgette Saree</p>
+                            <span class = "fw-bold d-block">Rs 3390.00</span>
+                            <button onclick="addToCart('Ethnic Fusion Geo Printed Sheer Georgette Saree', 3390.00)" class = "btn btn-primary add-cart my-3">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="position-relative special-item">
+                        <div class = "special-img position-relative overflow-hidden">
+                            <img src = "images/Amani printed collar shirt.jpg" class = "w-100">
+                            <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                                <i class = "fas fa-heart"></i>
+                            </span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">Amani printed collar shirt</p>
+                            <span class = "fw-bold d-block">Rs 3890.00</span>
+                            <button onclick="addToCart('Amani printed collar shirt', 3890.00)" class = "btn btn-primary add-cart my-3">Add to Cart</button>
+                        </div>
+                    </div>
+   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blogs -->
+    <section id = "offers" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-white">Discount Up To 40%</span>
+                    <h2 class = "mt-2 mb-4 text-white">Grand Sale Offer!</h2>
+                    <a href = "" class = "btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- blogs -->
+    <section id = "blogs" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+                <hr class= "my-3">
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 mt-lg-0 mt-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RRv5udKGG68?si=ZuUc6QLtNKlg6p4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <div class="ratio ratio-16x9 mt-lg-0 mt-4">
+                        <iframe width="866" height="487" src="https://www.youtube.com/embed/gJpXlRkW6Fw" title="Video Fashion Ads. : Passa Silkwear" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <div class="ratio ratio-16x9 mt-lg-0 mt-4">
+                        <iframe width="866" height="487" src="https://www.youtube.com/embed/7Twgvw5NnvU" title="The Color of Melody | Spring - Summer  &#39;23 Collection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                      </div>
+                </div>
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4">
+                    <div class="ratio ratio-16x9 mt-lg-0 mt-4">
+                        <iframe width="866" height="487" src="https://www.youtube.com/embed/Vzwi5o0FM0w" title="Alanis Guillen - L&#39;Officiel Brasil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                      </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <div class="ratio ratio-16x9 mt-lg-0 mt-4">
+                        <iframe width="866" height="487" src="https://www.youtube.com/embed/zgovnOsxnR4" title="A Cinematic Fashion Film | Canon R3 | Film Emulation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                      </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <div class="ratio ratio-16x9 mt-lg-0 mt-4">
+                        <iframe width="866" height="487" src="https://www.youtube.com/embed/75nNqaNOYrs" title="M&amp;S Men&#39;s Style: The Art of Tailoring - TV AD 2016" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- about us -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 d-flex flex-row-reverse">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title-about pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block">About Us</h2>
+                        <hr class= "my-3">
+                    </div>
+                    <p>Welcome to Style With Me, your ultimate destination for fashion-forward clothing and accessories. Our mission is to inspire confidence and empower individuals to embrace their unique style.
+                    </p>
+                    <p>At Style With Me, we believe that fashion is not just about clothing; it's a form of self-expression. Whether you're looking for the perfect outfit for a special occasion or simply want to refresh your wardrobe, our curated collection offers something for every style and occasion.</p>
+                    <p>With a focus on quality, affordability, and the latest trends, we strive to provide our customers with a seamless shopping experience. Our team is dedicated to helping you find pieces that not only look great but also make you feel amazing.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "images/pink-wall.jpg" alt = "" class = "img-fluid">
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+    <!-- popular -->
+    <section id = "popular" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Top Rated</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI ARIANA SPAGHETTI STRAP TUBE TOP.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI ARIANA SPAGHETTI STRAP TUBE TOP</p>
+                            <span>Rs 2500.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI ATHLETIC JOGGER PANT.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI ATHLETIC JOGGER PANT</p>
+                            <span>Rs 3500.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI FLOUNCE SLEEVE FLORAL PRINTED TOP.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI FLOUNCE SLEEVE FLORAL PRINTED TOP</p>
+                            <span>Rs 2300.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Best Selling</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI LONG  CROPPED JUMPER.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI LONG  CROPPED JUMPER</p>
+                            <span>Rs 2100.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI LONG SLEEVE CROPPED JUMPER.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI LONG SLEEVE CROPPED JUMPER</p>
+                            <span>Rs 3200.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI LONG SLEEVE FLORAL TOP.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI LONG SLEEVE FLORAL TOP</p>
+                            <span>Rs 2700.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">On Sale</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI LONG SLEEVE SHIRT.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI LONG SLEEVE SHIRT</p>
+                            <span>Rs 1750.00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI MAXI SKIRT AND CROP TOP CO-ORD SET.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI MAXI SKIRT AND CROP TOP CO-ORD SET</p>
+                            <span></span>Rs 3100.00
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "gallery/AMANI MID WASH SLIM FIT DENIM JEAN.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">AMANI MID WASH SLIM FIT DENIM JEAN</p>
+                            <span>Rs 2800.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular -->
+
+    <!-- newsletter -->
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                    <hr class="my-3">
+                </div>
+    
+                <p class="text-center text-muted">Stay in the loop with our latest trends, exclusive offers, and style tips!</p>
+                <form id="newsletterForm">
+                    <div class="input-group mb-3 mt-3">
+                        <input id="emailInput" type="email" class="form-control" placeholder="Enter Your Email ..." required>
+                        <button id="subscribeButton" class="btn btn-primary" type="submit" disabled>Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="modal" id="successModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header inquiry-modalheader">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body inquiry-modalbody">
+                        <div class="text-center">
+                            <img src="images\successfully.svg">
+                            <h1 class="py-5"><b>Thanks <br> for subscribing!</b></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+
+     <!-- map-sec -->
+     <section class="map-sec overflow-hidden">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <div class="position-relative">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31638.56109283288!2d79.914436177174!3d7.5945457044141556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2d21046330491%3A0x552df1c41032367e!2sBingiriya!5e0!3m2!1sen!2slk!4v1709288674101!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="position-absolute top-50 start-50 translate-middle">
+                  <img src="images/logo.png" class="location">
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of map-sec -->
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Style with me</a>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "myaccount.html" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> My Account
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "faq.html" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> FAQ
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "delivery.html" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Delivery Details
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "contact.html" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Namal Uyana road, Bingiriya
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            stylewithme@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +94123456789
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Add this modal at the end of your body -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Cart contents will be dynamically added here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="view.html" class="btn btn-primary">View Cart</a>            
+            </div>
+        </div>
+    </div>
+</div>
+<!--popup-->
+<script>
+    const popup = document.querySelector(".popup");
+    const closePopup = document.querySelector(".popup-close");
+    
+    // Function to check if the user has already seen the popup
+    function checkPopupCookie() {
+      const popupCookie = getCookie("popupShown");
+      return popupCookie !== null && popupCookie === "true";
+    }
+    
+    // Function to set a cookie
+    function setCookie(name, value, days) {
+      const expires = new Date();
+      expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+      document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+    }
+    
+    // Function to get a cookie by name
+    function getCookie(name) {
+      const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+      for (const cookie of cookies) {
+        const [cookieName, cookieValue] = cookie.split('=');
+        if (cookieName === name) {
+          return cookieValue;
+        }
+      }
+      return null;
+    }
+    
+    if (popup) {
+      closePopup.addEventListener("click", () => {
+        popup.classList.add("hide-popup");
+        setCookie("popupShown", "true", 1); // Set the cookie to expire in 1 day
+      });
+    
+      window.addEventListener("load", () => {
+        // Show the popup only if the user hasn't seen it before
+        if (!checkPopupCookie()) {
+          setTimeout(() => {
+            popup.classList.remove("hide-popup");
+          }, 1000);
+        }
+      });
+    }
+    </script>
+    
+
+<script>
+    $(document).ready(function() {
+
+        // Initialize cart count and retrieve cart details from storage
+        var cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
+        updateCartCount();
+
+        // Add to cart button click
+        $('.add-cart').on('click', function() {
+            // Increment cart count
+            cartCount++;
+            updateCartCount();
+
+            // Get product details
+            var productContainer = $(this).closest('.special-item');
+            var productName = productContainer.find('p').text();
+            var productImage = productContainer.find('.special-img img').attr('src');
+            var productPrice = productContainer.find('.fw-bold').text();
+
+            // Add product to cart modal and store in localStorage
+            $('#cartModal .modal-body').append(`
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <img src="${productImage}" alt="${productName}" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="text-capitalize">${productName}</p>
+                        <p>${productPrice}</p>
+                        <button class="btn btn-danger btn-sm remove-product">Remove</button>
+                    </div>
+                </div>
+            `);
+
+            saveCartDetails();
+        });
+
+        // Cart icon click to show modal
+        $('#cart-icon').on('click', function() {
+            $('#cartModal').modal('show');
+        });
+
+        // Handle remove product button click
+        $('#cartModal').on('click', '.remove-product', function() {
+            // Decrease cart count, but ensure it doesn't go below 0
+            cartCount = Math.max(0, cartCount - 1);
+            updateCartCount();
+
+            // Remove product from modal and update localStorage
+            $(this).closest('.row').remove();
+            saveCartDetails();
+        });
+
+        // Update cart count in the navbar
+        function updateCartCount() {
+            $('#cart-count').text(cartCount);
+            // Update localStorage with the current cart count
+            localStorage.setItem('cartCount', cartCount);
+        }
+
+        // Save cart details to localStorage
+        function saveCartDetails() {
+            var cartDetails = $('#cartModal .modal-body').html();
+            localStorage.setItem('cartDetails', cartDetails);
+        }
+
+        // Retrieve and display cart details from localStorage when the page loads
+        var storedCartDetails = localStorage.getItem('cartDetails');
+        if (storedCartDetails) {
+            $('#cartModal .modal-body').html(storedCartDetails);
+        }
+    });
+
+
+    // JavaScript functions for adding products to the cart
+  function addToCart(productId, price) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ productId, price });
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+  // Handle remove product button click in the modal
+$('#cartModal').on('click', '.remove-product', function() {
+    var index = $(this).data('index');
+    // Remove the item from the cart array in localStorage
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Update the view page
+    displayCartItems();
+
+    // Update the modal cart
+    $(this).closest('.row').remove();
+    updateCartCount();
+});
+
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('.special-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true, 
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                
+                },
+                1000:{
+                    items:4,
+                    nav:true,
+                    
+                }
+            }
+        });
+    });
+</script>
+<script>
+// Clearing the entire local storage
+//localStorage.clear();
+
+// Clearing specific item from local storage
+//localStorage.removeItem('yourKey');
+</script>
+
+
+
+    
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</body>
+</html>
