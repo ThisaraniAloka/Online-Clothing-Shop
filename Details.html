@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="Details.css">
+    <!-- bootstrap css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom Script -->
+<script src="zoomsl.min.js"></script>
+<style>
+  .bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: #E53481 !important;
+}
+</style>
+
+    <title>Product details</title>
+  </head>
+
+  <body>
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+      <div class = "container">
+          <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "Home.html">
+              <img src = "images/logo.png" alt = "site icon">
+              <span class = "text-uppercase fw-lighter ms-2">Style with me</span>
+          </a>
+
+          <div class = "order-lg-2 nav-btns">
+            <button type="button" class="btn position-relative" id="cart-icon-btn">
+              <i id="cart-icon" class="fa fa-shopping-cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">0</span>
+            </button>            
+              <button type = "button" class = "btn position-relative">
+                  <i class = "fa fa-heart"></i>
+                  <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+              </button>
+              <button type = "button" class = "btn position-relative">
+                  <i class = "fa fa-search"></i>
+              </button>
+          </div>
+
+          <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+              <span class = "navbar-toggler-icon"></span>
+          </button>
+
+          <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+              <ul class = "navbar-nav mx-auto text-center">
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-dark" href = "#collection">collection</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-dark" href = "#special">specials</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-dark" href = "#blogs">blogs</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2">
+                      <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                  </li>
+                  <li class = "nav-item px-2 py-2 border-0">
+                      <a class = "nav-link text-uppercase text-dark" href = "#popular">popular</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- end of navbar -->
+  
+    <!-- Product Details -->
+    <section class="section product-detail">
+      <div class="details container">
+        <div class="left image-container">
+          <div class="main">
+            <img src="images/silk saree.jpg" id="zoom" alt="" />
+          </div>
+        </div>
+        <div class = "product-content">
+          <h2 class = "product-title">SILK SAREE</h2>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.7</span>
+          </div>
+
+          <div class = "product-price">
+            
+            <p class = "new-price">Price: <span>Rs 5000.00 </span></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>about this item: </h2>
+            <p>Black and white Silk saree with thick embroidered border
+            <p><b>Product image may differ to actual due to photographic lighting</b></p>
+            <p>Material:Silk Batik</p>
+            <p>Weight:600g</p>
+            <ul>
+              <li>
+                Size:<select name="size" style="border-color:rgb(38, 3, 85);">
+                  <option value="1">S</option>
+                  <option value="1">M</option>
+                  <option value="1">L</option>
+                  <option value="1">XL</option>
+                  <option value="1">XXL</option>
+                </select>
+              </li>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>Saree</span></li>
+              <li>Shipping Area: <span>All over the world</span></li>
+              <li>Shipping Fee: <span>Free</span></li>
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+            <button onclick="addToCart('silk saree', 5000.00)" type = "btn btn-primary add-cart mt-3 button" class = "btn" id="add-to-cart-button" data-price="249.00"> Add to Cart <i class = "fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+          <div class = "social-links">
+            <p>Share At: </p>
+            <a href = "#">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!--review-->
+<div class="container">
+  <h1 class="section-header">
+      review
+  </h1>
+  <div class="testimonials">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="single-item">
+                  <div class="row">
+                      <div class="col-md-5">
+                          <div class="profile">
+                              <div class="img-area">
+                                  <img src="gallery/47.jpg" alt="" style="height: 200px;">
+                              </div>
+                              <div class="bio">
+                                  
+                                  <h4>Thisarani</h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="content">
+                              <p><span><i class="fa fa-quote-left"></i></span>Thank you so much for your prompt service! I received the dress and I am extremely satisfied with it. The quality is excellent, and it fits perfectly. I appreciate your attention to detail, and I look forward to shopping with you again in the future. Keep up the great work!</p>
+                              <p class="socials">
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star-half-alt"></i>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="single-item">
+                  <div class="row">
+                      <div class="col-md-5">
+                          <div class="profile">
+                              <div class="img-area">
+                                  <img src="gallery/45.jpeg" alt=""style="height: 200px;>
+                              </div>
+                              <div class="bio">
+                                  
+                                  <h4>Aloka</h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="content">
+                              <p><span><i class="fa fa-quote-left"></i></span>Thank you for your prompt service! I received the dress and am absolutely satisfied with my purchase. It fits perfectly and looks even better in person. I appreciate your attention to detail and the quality of your products. Looking forward to shopping with you again in the future!</p>
+                              <p class="socials">
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star-half-alt"></i>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="single-item">
+                  <div class="row">
+                      <div class="col-md-5">
+                          <div class="profile">
+                              <div class="img-area">
+                                  <img src="gallery/49.jpeg" alt="" style="height: 200px;">
+                              </div>
+                              <div class="bio">
+                                  
+                                  <h4>Sachini</h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="content">
+                              <p><span><i class="fa fa-quote-left"></i></span>Thank you so much for your prompt service! I received the dress and am absolutely thrilled with it. The quality is fantastic, and it fits perfectly. I appreciate your attention to detail, and I will definitely be recommending your store to friends and family. Looking forward to shopping with you again in the future!</p>
+                              <p class="socials">
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
+</div>
+</section>
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Cart contents will be dynamically added here -->
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Proceed to Checkout</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<script>
+  $(function () {
+    console.log("hello");
+    $("#zoom").imagezoomsl({
+      zoomrange: [4, 4],
+    });
+  });
+
+  $(document).ready(function () {
+    // Initialize cart count and retrieve cart details from storage
+    var cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
+    updateCartCount();
+
+    // Add to cart button click
+    $('#add-to-cart-button').on('click', function () {
+      // Increment cart count
+      cartCount++;
+      updateCartCount();
+
+      // Get product details
+      var productName = $('.product-title').text();
+      var productImage = $('#zoom').attr('src');
+      var productPrice = $('.new-price span').text();
+
+      // Add product to cart modal and store in localStorage
+      $('#cartModal .modal-body').append(`
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <img src="${productImage}" alt="${productName}" class="img-fluid">
+          </div>
+          <div class="col-md-8">
+            <p class="text-capitalize">${productName}</p>
+            <p>${productPrice}</p>
+            <button class="btn btn-danger btn-sm remove-product">Remove</button>
+          </div>
+        </div>
+      `);
+
+      saveCartDetails();
+    });
+
+    // Cart icon click to show modal
+    $('#cart-icon-btn').on('click', function () {
+      $('#cartModal').modal('show');
+    });
+
+    // Handle remove product button click
+    $('#cartModal').on('click', '.remove-product', function () {
+      // Decrease cart count
+      cartCount--;
+      updateCartCount();
+
+      // Remove product from modal and update localStorage
+      $(this).closest('.row').remove();
+      saveCartDetails();
+    });
+
+    // Update cart count in the navbar and cart modal
+function updateCartCount() {
+  // Update cart count in the badge of the cart icon
+  $('#cart-icon-btn .badge').text(cartCount);
+  // Update cart count in the cart modal
+  $('#cartModal .modal-body .cart-count').text(cartCount);
+
+  // Update localStorage with the current cart count
+  localStorage.setItem('cartCount', cartCount);
+}
+
+    // Save cart details to localStorage
+    function saveCartDetails() {
+      var cartDetails = $('#cartModal .modal-body').html();
+      localStorage.setItem('cartDetails', cartDetails);
+    }
+
+    // Retrieve and display cart details from localStorage when the page loads
+    var storedCartDetails = localStorage.getItem('cartDetails');
+    if (storedCartDetails) {
+      $('#cartModal .modal-body').html(storedCartDetails);
+    }
+  });
+
+
+
+   // JavaScript functions for adding products to the cart
+   function addToCart(productId, price) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ productId, price });
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+</script>
+
+  </body>
+</html>

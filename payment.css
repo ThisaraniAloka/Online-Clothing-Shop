@@ -1,0 +1,99 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-transform:capitalize;
+    transition:all .2s linear;
+}
+body{
+    padding-top:120px;
+}
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: #e53481!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+.contain{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+    background:white;
+    padding-bottom:70px;
+}
+.contain form{
+    padding:20px;
+    width:700px;
+    background:#fff ;
+    box-shadow:0 5px 10px black;
+}
+.contain form .row{
+    display:flex;/*divided 2parts*/
+    flex-wrap:wrap;
+    gap:15px;
+}
+.contain form .row .col{
+    flex:1 1 250px;
+}
+.contain form .row .col .title{
+    font-size:20px;
+    color:hotpink;
+    padding-bottom:5px;
+    text-transform: uppercase;
+}
+.contain form .row .col .inputBox{
+    margin:15px 0;
+}
+.contain form .row .col .inputBox span{
+    margin-bottom:5px;
+    display:block;/*special balanna exam ekata*/
+}
+.contain form .row .col .inputBox input{
+    width:100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size:15px;
+    text-transform:none;
+}
+.contain form .row .col .inputBox input:focus{
+    border:1px solid black;
+}
+.contain form .row .col .flex{
+    display:flex;/*special balanna*/
+    gap:15px;
+}
+.contain form .row .col .flex .inputBox{
+    margin-top:5px;
+}
+.contain form .row .col .inputBox img{
+    height:34px;
+    margin-top:5px;
+    filter:drop-shadow(0 0 1px black);
+}
+.contain form .submit-btn{
+    width:100%;
+    padding:12px;
+    font-size:17px;
+    background:rgb(241, 146, 225);
+    color:black;
+    margin-top:5px;
+    cursor:pointer;
+}
+.contain form .submit-btn:hover{
+    background:hotpink;
+}

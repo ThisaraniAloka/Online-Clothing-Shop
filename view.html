@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cart</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .product-image {
+            max-width: 100px;
+            max-height: 100px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>View Cart</h1>
+    <div id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </div>
+    <div id="total-price" class="mt-3">
+        <!-- Total price will be displayed here -->
+    </div>
+
+    <script>
+        // Retrieve cart details from local storage
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Display each product in the cart
+        function displayCartItems() {
+            var cartItemsHtml = '';
+            var totalPrice = 0;
+
+            cart.forEach(function (item, index) {
+                cartItemsHtml += `
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.productId}</h5>
+                            <img src="images/${item.productId}.jpg" class="product-image">
+                            <p class="card-text">Price: Rs${item.price.toFixed(2)}</p>
+                            <button class="btn btn-danger btn-sm remove-product" data-index="${index}">Remove</button>
+                        </div>
+                    </div>
+                `;
+                totalPrice += item.price;
+            });
+
+            document.getElementById('cart-items').innerHTML = cartItemsHtml;
+
+            // Display total price
+            document.getElementById('total-price').innerHTML = `<h5>Total Price: Rs${totalPrice.toFixed(2)}</h5>`;
+        }
+
+        // Initial display of cart items
+        displayCartItems();
+    </script>
+
+</div>
+
+</body>
+</html>

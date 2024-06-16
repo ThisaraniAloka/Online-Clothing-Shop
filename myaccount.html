@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="myaccount.css">
+    <title>Your Account</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!--bootstrap icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "Home.html">
+                <img src = "images/logo.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">Style with me</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <i id="cart-icon" class = "fa fa-shopping-cart"></i>
+                    <span id="cart-count" class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#collection">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#special">specials</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#blogs">blogs</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#popular">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <div class="container-fluid">
+    <div class="row">
+    <div id="sidebar" class="col-lg-2 col-md-3 col-sm-12">
+        <ul>
+            <li><a href="#" onclick="showInfo('personalInfo')"><i class="bi bi-person-circle"></i>Personal Information</a></li>
+            <li><a href="#" onclick="showInfo('updatePassword')"><i class="bi bi-lock-fill"></i>Update Password</a></li>
+            <li><a href="#" onclick="showInfo('myAddress')"><i class="bi bi-geo-alt-fill"></i>My Address</a></li>
+            <li><a href="#" onclick="showInfo('orderHistory')"><i class="bi bi-cart-fill"></i>Order History</a></li>
+        </ul>
+    </div>
+
+    <div id="content" class="col-lg-10 col-md-9 col-sm-12">
+        <div id="personalInfo" style="display: none;">
+            <form class="w-50 mx-auto py-5 shadow p-4">
+                <h3>Personal Information</h3><hr>
+                <div class="mb-3">
+                  <label for="exampleInputName1" class="form-label">First name*</label>
+                  <input type="email" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Last Name*</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPhoneNumber1" class="form-label">Phone no*</label>
+                    <input type="text" class="form-control" id="exampleInputPhoneNumber1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputName1" class="form-label">E-mail*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                <div class="mb-3 d-flex">
+                    <button type="submit" class="btn btn-primary">save</button>
+                </div>
+              </form>
+        </div>
+
+        <div id="updatePassword" style="display: none;">
+            <form class="w-50 mx-auto py-5 shadow p-4">
+                <h3>Update Password</h3><hr>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Update Password*</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">New Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Re-enter New Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <div class="mb-3 d-flex">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    
+                </div>
+              </form>
+        </div>
+
+        <div id="myAddress" style="display: none;">
+            <form class="w-50 mx-auto py-5 shadow p-4">
+                <h3>New Address</h3><hr>
+                <div class="mb-3">
+                  <label for="exampleInputCountry1" class="form-label">Country*</label>
+                  <input type="text" class="form-control" id="exampleInputCountry1" aria-describedby="CountryHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputAddress1" class="form-label">Address*</label>
+                  <input type="text" class="form-control" id="exampleInputAddress1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputCity1" class="form-label">City*</label>
+                    <input type="text" class="form-control" id="exampleInputCity1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputProvince1" class="form-label">State/Province*</label>
+                    <input type="text" class="form-control" id="exampleInputProvince1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputProvince1" class="form-label">Zip/Postal code</label>
+                    <input type="text" class="form-control" id="exampleInputProvince1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputName1" class="form-label">Recipient's First Name*</label>
+                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                  </div>
+                <div class="mb-3 d-flex">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+        </div>
+
+        <div id="orderHistory" style="display: none;">
+            <h2>Order History</h2>
+
+            <!-- Example Order 1 -->
+            <div class="order" onclick="showOrderDetails('order1')">
+                <div class="left-column">
+                    <div class="order-number">1706754894</div>
+                    <div class="order-date">01 Feb 2024</div>
+                </div>
+                <div class="right-column">
+                    <div class="order-total">Total - Rs. 4,627.50</div>
+                    <div class="order-items">9 Items</div>
+                </div>
+            </div>
+
+            <!-- Example Order 1 Details -->
+            <div id="order1" class="order-details" style="display: none;">
+                <h3>Order View</h3>
+
+                <div class="order-summary">
+                    <div class="left-column">
+                        <div class="order-number">1706754894</div>
+                        <div class="order-date">01 Feb 2024</div><br>
+                        <div class="shipping-address">
+                            Mukalanhena,Bingiriya<br>
+                            Bingiriya / 60450
+                        </div>
+                        <div class="order-status">Shipped</div>
+                    </div>
+                    <div class="right-column">
+                        <div class="order-total">Total - Rs. 4,627.50</div>
+                        <div class="order-items">9 Items</div>
+                    </div>
+                </div>
+
+                <!-- Example Order Items -->
+                <div class="order-items-list">
+                    <div class="item">
+                        <div class="item-name">Product 1</div>
+                        <div class="item-price">Rs. 500.00</div>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script>
+        function showInfo(infoType) {
+            // Hide all content divs
+            var contentDivs = document.querySelectorAll('#content > div');
+            contentDivs.forEach(function (div) {
+                div.style.display = 'none';
+            });
+
+            // Show the selected content div
+            document.getElementById(infoType).style.display = 'block';
+        }
+
+
+
+
+        function showOrderDetails(orderId) {
+            // Hide all order details divs
+            var orderDetailsDivs = document.querySelectorAll('.order-details');
+            orderDetailsDivs.forEach(function (div) {
+                div.style.display = 'none';
+            });
+
+            // Show the selected order details div
+            document.getElementById(orderId).style.display = 'block';
+        }
+
+        function showInfo(infoType) {
+            // Hide all content divs
+            var contentDivs = document.querySelectorAll('#content > div');
+            contentDivs.forEach(function (div) {
+                div.style.display = 'none';
+            });
+
+            // Show the selected content div
+            document.getElementById(infoType).style.display = 'block';
+        }
+    </script>
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
